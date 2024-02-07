@@ -1,3 +1,5 @@
+
+
 /* Reset default list styles and remove padding/margin */
 body {
     margin: 0;
@@ -441,7 +443,54 @@ nav {
     font-size: 20px;
   }
 
-
+  .dropbtn {
+    /* background-color: #08291d; */
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 7px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: none;
+    /* display: inline-block; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffffb6;
+    /* min-width: 160px; */
+    /* width: 300px; */
+    padding-left: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    /* padding: 12px 16px; */
+    transform: translateX(-20%);
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* .dropdown-content a:hover {
+    background-color: #0f3f19;
+  } */
+  
+  .dropdown.clicked .dropdown-content {
+    display: block;
+  }
 
 @media (max-width: 1750px){
     .element .working-text:hover::after{
@@ -474,6 +523,11 @@ nav {
     
     /* justify-content: center; */
 }
+.dropdown {
+    position: relative;
+    display: none;
+    display: inline-block;
+  }
 
 .menu {
     display: none;
@@ -747,6 +801,13 @@ body {
     .logo img{
         height: 78px;
     }
+
+    .dropdown {
+        position: relative;
+        display: none;
+        display: inline-block;
+      }
+    
 
     .menu.active {
         display: block; /* Display the menu when active class is added */
