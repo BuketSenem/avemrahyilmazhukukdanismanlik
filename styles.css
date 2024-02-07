@@ -489,9 +489,9 @@ nav {
     display: flex;
 }
 
-.menu-toggle {
+/* .jmenu {
     display: block;
-}
+} */
 
 /* #problem-text{
     text-align: center;
@@ -669,13 +669,13 @@ nav {
 
 
 /* Responsive menu styles */
-.menu-toggle {
+/* .jmenu{
     display: none;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     cursor: pointer;
-}
+} */
 
 body {
     margin: 0;
@@ -774,13 +774,13 @@ body {
         color: #a5a5a5; /* Text color on hover */
     }
 
-    .menu-toggle {
-        display: block; /* Display the menu toggle button */
+    /* .menu-toggle {
+        display: block; 
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 14px 16px;
         cursor: pointer;
-    }
+    } */
     .constant-div {
         position: relative;
         width: 100%;
@@ -852,9 +852,9 @@ body {
         display: flex;
     }
     
-    .menu-toggle {
+    /* .jmenu {
         display: block;
-    }
+    } */
 }
 
 @media screen and (max-width: 565px){
