@@ -1,0 +1,1118 @@
+/* Reset default list styles and remove padding/margin */
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    max-height: 100vh; /* Create enough scrollable height */
+
+}
+ul {
+    list-style: none;
+    /* padding: 0; */
+    padding-right: 2rem;
+    margin: 0;
+    
+}
+
+.menu a{
+    font-family: 'Lora', serif;
+}
+
+body .banner-area .banner-text{
+    letter-spacing: 2px;
+}
+body.kararlar .banner-area{
+    background-image: url(/image/banner-img5.jpg);
+}
+body.hakkinda .banner-area{
+    background-image: url(/image/banner-img3.jpg);
+}
+body.calisma-alanlari .banner-area{
+    background-image: url(/image/banner-img44.jpg);
+}
+body.hakkinda .banner-area .banner-text{
+    letter-spacing: 2px;
+}
+body.calisma-alanlari .banner-area .banner-text{
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+
+body.iletisim .banner-area{
+    background-image: url(/image/banner-img2.PNG);
+}
+.banner-area{
+    position: relative;
+    height: fit-content;
+    height: 503px;
+    width: 100%;
+    background-image: url(/image/banner-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Style for the navigation menu */
+nav {
+    background-color: rgba(18, 61, 18, 0.8); /* Use an RGBA color with an alpha (transparency) value */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Put items at each end of the container */
+    align-items: center; /* Center items vertically within the nav element */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+.logo {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically within the container */
+}
+
+
+/* Style for the logo */
+.logo img {
+    height: 90px; /* Adjust the height of the logo as needed */
+    width: auto; /* Ensure the logo scales proportionally */
+    padding-left: 1rem;
+}
+.logo-text {
+    font-family: 'Lora', serif; /* Use the "Lora" font */
+    color: white;
+    font-size: 22px;
+    margin-left: 10px; /* Adjust the spacing as needed */
+}
+
+.banner-text{
+    position: absolute; /* Position the text absolutely within the .banner-area */
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: 50%; /* Position horizontally centered */
+    transform: translateX(-50%); /* Center horizontally using transform */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.295); /* Optional background color for better readability */
+    padding: 10px 20px; /* Optional padding for better styling */    
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+
+
+/* CSS for the element container */
+.element-holder {
+    /* display: inline-flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-image: url(/image/json.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* justify-content: center; */
+    
+}
+
+/* #problem-text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    padding-top: 55px;
+} */
+
+
+
+/* CSS for each individual element */
+.element {
+    position: relative;
+    display: block;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px); */
+    justify-content: center;
+    background-color: #f5f5f5;
+    background-image: url('your-image-url.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Adjust to your image size preference */
+    background-position: center; /* Adjust to your image position preference */
+    /* border: 2px solid #3498db; */
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: borderAnimation 2s infinite;
+    flex-basis: 33.33333%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+    /* margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px; */
+    height: 134.444px;
+    width: 690.365px;
+    margin: 25px;
+    /* animation: drawBorderFromCenter 2s infinite ; */
+}
+.working-text{
+    text-align: center;
+    /* justify-content: center; */
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    height: 100%;
+    text-decoration: none;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+    /* transform: translateY(1%); */
+}
+
+.element .working-text p{
+    transform: translateY(50%);
+    font-family: 'Lora', serif;
+    color: #000000;
+    text-shadow:2px 2px #00000057;
+}
+
+
+
+.element::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border: 5px solid transparent;
+}
+
+.element:hover:before{
+    animation: animate 1s linear forwards;
+}
+
+
+@keyframes animate {
+    0%{
+        
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color: #0f5f0f;
+        border-right-color: #0f5f0f;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        
+        width: 100%;
+        height: 100%;
+        border-top-color: #0f5f0f;
+        border-right-color: #0f5f0f;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.element::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border: 5px solid transparent;
+}
+
+.element:hover::after{
+    
+    animation: animate2 1s linear forwards;
+    
+}
+
+@keyframes animate2 {
+    0%{
+        
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #0f5f0f;
+        border-left-color: #0f5f0f;
+    }
+    50%{
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #0f5f0f;
+        border-left-color: #0f5f0f;
+    }
+    100%{
+        
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color:transparent;
+        border-bottom-color: #0f5f0f;
+        border-left-color: #0f5f0f;
+    }
+    
+}
+
+
+.element .working-text:hover {
+    font-size: 0;
+    white-space: normal;
+    overflow: visible;
+}
+
+.element .working-text:hover::after{
+    content: attr(data-hover-text);
+    text-align: center;
+    transform: translateY(75%);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 200;
+    display: flex;
+}
+
+.element .working-text[data-hover-text="Medeni Hukuk"]::after {
+    content: "Hovered on Medeni Hukuk";
+}
+
+.element .working-text[data-hover-text="İş Hukuku"]:after {
+    content: "Hovered on İş Hukuku";
+}
+
+.element .working-text[data-hover-text="İdare Hukuku"]:after {
+    content: "Hovered on İdare Hukuku";
+}
+
+.element .working-text[data-hover-text="Miras Hukuku"]:after {
+    content: "Hovered on Miras Hukuku";
+}
+
+.element .working-text[data-hover-text="Ceza Hukuku"]:after {
+    content: "Hovered on Ceza Hukuku";
+}
+
+.element .working-text[data-hover-text="İcra Hukuku"]:after {
+    content: "Hovered on İcra Hukuku";
+}
+
+.element .working-text[data-hover-text="Yabancılar Hukuku"]:after {
+    content: "Hovered on Yabancılar Hukuku";
+}
+
+.element .working-text[data-hover-text="Şirketler Hukuku"]:after {
+    content: "Hovered on Şirketler Hukuku";
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .about-section .text p{
+    font-size: 18px;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; 
+  }
+  
+  .about-section img {
+    /* max-width: 60%; */
+    height: auto; 
+    margin-right: 20px; 
+    padding-right: 55px;
+    max-width: 800px;
+  }
+  
+  .about-section .text {
+    font-family: 'Lora', serif;
+    flex-grow: 1;
+    /* padding-left: ; */
+    font-size: 25px;
+  }
+  .calisma-alanlari-hukuk{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .calisma-alanlari-header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+
+  .calisma-alanlari-header h2{
+    color: #0f5f0f;
+  }
+
+  .calisma-alanlari-header img{
+    padding-right: 15px;
+  }
+
+  .calisma-alanlari-text{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .ara-p{
+    font-size: 70px;
+    text-align: center;
+    color: #0f5f0f;
+  }
+
+  .kararlar-sec{
+    margin: 5% 10%;
+  }
+  
+  .kararlar-sec div{
+    padding: 30px 0;
+  }
+
+  .kararlar-sec div p{
+    font-size: 20px;
+  }
+  .kararlar-sec div p span{
+    font-weight: 600;
+  }
+
+  .kararlar-sec div #special-span{
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .kararlar-sec div #alti-cizik-span{
+    text-decoration: underline;
+  }
+
+  .iletisim-section{
+    display: flex;
+  }
+
+  .google-map{
+    margin: 10% 9%;
+    width: 600px;
+    height: 450px;
+  }
+
+  .adres{
+    margin: 10% 9%;
+  }
+
+  .adres p{
+    padding: 5% 0;
+    font-size: 20px;
+  }
+
+
+
+@media (max-width: 1750px){
+    .element .working-text:hover::after{
+        content: attr(data-hover-text);
+        font-size: 19px;
+        line-height: 28px;
+        font-weight: 200;
+        margin-top: -8px;
+        display: block;
+    }
+}
+    
+
+
+/* Media query for screens narrower than 767px */
+@media (max-width: 767px) {
+    /* CSS for the element container */
+.element-holder {
+    /* display: inline-flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: #ffffff;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    /* justify-content: center; */
+}
+
+/* #problem-text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    justify-content: center;
+    padding-top: 55px;
+} */
+
+
+/* CSS for each individual element */
+.element {
+    position: relative;
+    display: block;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px); */
+    justify-content: center;
+    background-color: #ffffff;
+    background-image: url('your-image-url.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Adjust to your image size preference */
+    background-position: center; /* Adjust to your image position preference */
+    border-radius: 0;
+    flex-basis: 60%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+    /* margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px; */
+    margin: 15px;
+    height: 140px;
+    width: auto;
+}
+.element.working-text p{
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px; */
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+/* .element.working-text p{
+
+} */
+
+.element .working-text:hover::after{
+    content: attr(data-hover-text);
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 200;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    transform: translateY(180%);
+}
+.about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section img {
+    margin-bottom: 20px;
+  }
+
+  .about-section .text {
+    padding: 20px;
+  }
+}
+
+/* Media query for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    /* CSS for the top and bottom rows */
+    .top-row,
+    .bottom-row {
+        display: inline-flex;
+        justify-content: center;
+        /* width: 100%; */
+    }
+    /* CSS for the element container */
+.element-holder {
+    /* display: inline-flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: #ffffff;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    /* justify-content: center; */
+}
+
+
+/* CSS for each individual element */
+.element {
+    position: relative;
+    display: block;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px); */
+    justify-content: center;
+    background-color: #ffffff;
+    background-image: url('your-image-url.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Adjust to your image size preference */
+    background-position: center; /* Adjust to your image position preference */
+    border-radius: 5px;
+    flex-basis: 33.33333%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+    /* margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px; */
+    margin: 25px;
+}
+.working-text{
+    text-align: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    text-decoration: none;
+    font-size: 27px;
+}
+
+
+
+#problem-text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+    
+}
+
+/* Style for the individual menu items */
+.menu {
+    /* background-color: rgba(46, 68, 167, 0.8); */
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    padding-right: 3rem;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Style for menu item links */
+.menu li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change link color on hover */
+/* .menu li a:hover {
+    background-color: #192666;
+} */
+
+
+/* Responsive menu styles */
+.menu-toggle {
+    display: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Create enough scrollable height */
+}
+
+
+
+.constant-div {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflow to clip the background */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-image: url(/image/full-page-background.jpg); /* Set your full-page background image path here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Fixed background attachment */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+}
+
+.scrolling-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the background image */
+    padding: 20px;
+    /* width: 800px; */
+    max-width: 568px; /* Set your maximum width as desired */
+    /* width: 100%; */
+    box-sizing: border-box;
+    margin-left: 15%;
+}
+
+.main-slogan{
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 28px;
+    /* margin-left: 30%; */
+}
+
+.slogan{
+    color: rgb(255, 255, 255);
+    /* margin-left: 30%; */
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+}
+
+
+
+
+
+/* Media query for mobile screens */
+@media (min-width: 566px) and (max-width: 1166px){
+    .menu {
+        display: none; /* Hide the menu by default on small screens */
+        background-color: rgba(46, 68, 167, 0.8); /* Background color for mobile menu */
+        padding: 10px;
+        text-align: center; /* Center-align text */
+    }
+
+    nav{
+        height: 75px;
+    }
+
+    .logo img{
+        height: 78px;
+    }
+
+    .menu.active {
+        display: block; /* Display the menu when active class is added */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    .banner-area {
+        height: 250px; /* Set a fixed or appropriate height for mobile screens */
+        background-size: cover; /* Maintain cover for smaller screens */
+    }
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        transition: color 0.3s ease; /* Smooth transition for text color */
+    }
+
+    /* Change link color on hover */
+    .menu li a:hover {
+        color: #a5a5a5; /* Text color on hover */
+    }
+
+    .menu-toggle {
+        display: block; /* Display the menu toggle button */
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        cursor: pointer;
+    }
+    .constant-div {
+        position: relative;
+        width: 100%;
+        overflow: hidden; /* Hide overflow to clip the background */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/image/full-page-background.jpg); /* Set your full-page background image path here */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /* Fixed background attachment */
+        background-position: center center; /* Center the background image both horizontally and vertically */
+    }
+
+    .scrolling-content {
+        position: relative;
+        z-index: 1; /* Ensure the content is above the background image */
+        /* padding: 20px; */
+        /* width: 800px; */
+        /* max-width: 568px; Set your maximum width as desired */
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin: auto;
+        
+    }
+    .element.working-text p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .element .working-text:hover::after{
+        content: attr(data-hover-text);
+        font-size: 17px;
+        line-height: 17px;
+        font-weight: 200;
+        text-align: center;
+        position: relative;
+        margin: -20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: block;
+        justify-content: center;
+    }
+    .iletisim-section{
+        display: block;
+      }
+      .google-map{
+        margin: 20px 0;
+        width: 100%;
+        height: 300px;
+      }
+    
+      .adres p{
+        padding: 5% 0;
+        font-size: 20px;
+      }
+}
+
+@media screen and (max-width: 565px){
+    .menu {
+        display: none; /* Hide the menu by default on small screens */
+        background-color: rgba(46, 68, 167, 0.8); /* Background color for mobile menu */
+        padding: 10px;
+        text-align: center; /* Center-align text */
+    }
+
+    nav{
+        height: 65px;
+    }
+
+    .logo img{
+        height: 67px;
+    }
+
+    .menu.active {
+        display: block; /* Display the menu when active class is added */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    .banner-area {
+        height: 250px; /* Set a fixed or appropriate height for mobile screens */
+        background-size: cover; /* Maintain cover for smaller screens */
+    }
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        transition: color 0.3s ease; /* Smooth transition for text color */
+    }
+
+    /* Change link color on hover */
+    .menu li a:hover {
+        color: #a5a5a5; /* Text color on hover */
+    }
+
+    .menu-toggle {
+        display: block; /* Display the menu toggle button */
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        cursor: pointer;
+    }
+
+    .banner-area .banner-text{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .constant-div {
+        position: relative;
+        width: 100%;
+        overflow: hidden; /* Hide overflow to clip the background */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/image/full-page-background.jpg); /* Set your full-page background image path here */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /* Fixed background attachment */
+        background-position: center center; /* Center the background image both horizontally and vertically */
+    }
+    .scrolling-content {
+        position: relative;
+        z-index: 1; /* Ensure the content is above the background image */
+        /* padding: 20px; */
+        /* width: 800px; */
+        max-width: 568px; /* Set your maximum width as desired */
+        text-align: center;
+        margin: auto;
+        
+    }
+    
+    .element .working-text:hover::after{
+        content: attr(data-hover-text);
+        font-size: 17px;
+        line-height: 17px;
+        font-weight: 200;
+        transform: translateY(70%);
+        text-align: center;
+        position: relative;
+        /* margin: -25px; */
+        /* padding-left: 5px;
+        padding-right: 5px; */
+        display: block;
+        justify-content: center;
+
+    }
+
+    footer {
+        background-color: #042704f1; /* You can change this color */
+        color: rgb(189, 189, 189);
+        /* padding: 20px; */
+        text-align: center;
+        position: relative; /* Make the parent position relative */
+        font-family: 'Lora', serif;
+      }
+      
+      .footer-section {
+        padding-top: 30px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        max-width: 1200px; /* Adjust this value based on your preference */
+        margin: 0 auto; /* Center the content */
+      }
+      
+      .contact-info,.yilmaz-hukuk,
+      .practice-areas {
+        flex: 1;
+        margin: 10px 10px;
+        padding-right: 35px;
+        padding-left: 10px;
+      }
+      
+      .practice-areas-columns {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .practice-areas-columns div {
+        flex: 1;
+      }
+      
+      .practice-areas-columns div a {
+        color: rgb(170, 170, 170);
+        text-decoration: none;
+      }
+
+      .about-section .image{
+        transform: translateX(7.6%);
+      }
+      .iletisim-section{
+        display: block;
+      }
+      .google-map{
+        margin: 20px 0;
+        width: 100%;
+        height: 300px;
+      }
+    
+      .adres p{
+        padding: 5% 0;
+        font-size: 20px;
+      }
+}
+
+
+
+
+
+/* Style for menu item links */
+.menu li a {
+    font-size: 22px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    position: relative; /* Add relative positioning to the anchor element */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Add pseudo-elements for the left and bottom lines */
+.menu li a::before,
+.menu li a::after {
+    content: '';
+    position: absolute;
+    background-color: #476b52; /* Line color */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Style for the left line */
+.menu li a::before {
+    left: 0;
+    top: 0;
+    width: 2px; /* Width of the left line */
+    height: 100%; /* Full height of the menu item */
+    transform-origin: top; /* Set transform origin to the top */
+    transform: scaleY(0); /* Initially scale vertically to 0 */
+}
+
+/* Style for the bottom line */
+.menu li a::after {
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Full width of the menu item */
+    height: 2px; /* Height of the bottom line */
+    transform-origin: right; /* Set transform origin to the right */
+    transform: scaleX(0); /* Initially scale horizontally to 0 */
+}
+
+/* Change link color on hover */
+.menu li a:hover {
+    color: #ffffff; /* Text color on hover */
+}
+
+/* Expand the lines on hover */
+.menu li a:hover::before {
+    transform: scaleY(1); /* Scale vertically to 1 on hover */
+}
+
+.menu li a:hover::after {
+    transform: scaleX(1); /* Scale horizontally to 1 on hover */
+}
+
+footer {
+    background-color: #042704f1; /* You can change this color */
+    color: rgb(189, 189, 189);
+    /* padding: 20px; */
+    text-align: center;
+    position: relative; /* Make the parent position relative */
+    font-family: 'Lora', serif;
+  }
+  
+  .footer-section {
+    padding-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    max-width: 1200px; /* Adjust this value based on your preference */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .contact-info,
+  .practice-areas {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .practice-areas-columns {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .practice-areas-columns div {
+    flex: 1;
+  }
+  
+  .practice-areas-columns div a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+  }
+
+  .developer{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    height: 32px;
+    margin-top: 20px;
+    /* padding-left: auto;
+    padding-right: auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .linkedin{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .linkedin p{
+    text-align: center;
+    padding-right: 5px;
+    font-size: 15px;
+  }
+
+  /* .developer-a{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* .developer p{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+   */
+  .copyright {
+    background-color: rgb(24, 24, 24); /* You can change this color */
+    color: rgb(196, 196, 196);
+    padding: 20px; /* Artırılan padding değeri */
+    text-align: center;
+    width: 100%;
+    position: relative; /* Position'u relative olarak değiştir */
+    margin-top: 20px; /* Yukarıdan gelen mesafe */
+    /* overflow: hidden; */
+    box-sizing: border-box;
+  }
