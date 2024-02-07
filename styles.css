@@ -22,13 +22,13 @@ body .banner-area .banner-text{
     letter-spacing: 2px;
 }
 body.kararlar .banner-area{
-    background-image: url(/image/banner-img5.jpg);
+    background-image: url(image/banner-img5.jpg);
 }
 body.hakkinda .banner-area{
-    background-image: url(/image/banner-img3.jpg);
+    background-image: url(image/banner-img3.jpg);
 }
 body.calisma-alanlari .banner-area{
-    background-image: url(/image/banner-img44.jpg);
+    background-image: url(image/banner-img44.jpg);
 }
 body.hakkinda .banner-area .banner-text{
     letter-spacing: 2px;
@@ -39,14 +39,14 @@ body.calisma-alanlari .banner-area .banner-text{
 }
 
 body.iletisim .banner-area{
-    background-image: url(/image/banner-img2.PNG);
+    background-image: url(image/banner-img2.PNG);
 }
 .banner-area{
     position: relative;
     height: fit-content;
     height: 503px;
     width: 100%;
-    background-image: url(/image/banner-img.jpg);
+    background-image: url(image/banner-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,7 +102,7 @@ nav {
     /* justify-content: space-around; */
     /* justify-content: space-between; */
     /* align-items: center; */
-    background-image: url(/image/json.jpg);
+    background-image: url(image/json.jpg);
     background-size: cover;
     background-position: center;
     background-color: #ffffff;
@@ -664,7 +664,7 @@ body {
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: center; */
-    background-image: url(/image/full-page-background.jpg); /* Set your full-page background image path here */
+    background-image: url(image/full-page-background.jpg); /* Set your full-page background image path here */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Fixed background attachment */
@@ -760,7 +760,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url(/image/full-page-background.jpg); /* Set your full-page background image path here */
+        background-image: url(image/full-page-background.jpg); /* Set your full-page background image path here */
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed; /* Fixed background attachment */
@@ -874,7 +874,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url(/image/full-page-background.jpg); /* Set your full-page background image path here */
+        background-image: url(image/full-page-background.jpg); /* Set your full-page background image path here */
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed; /* Fixed background attachment */
