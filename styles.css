@@ -14,6 +14,12 @@ ul {
     
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 .menu a{
     font-family: 'Lora', serif;
 }
@@ -462,6 +468,24 @@ nav {
     flex-wrap: wrap;
     
     /* justify-content: center; */
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #333;
+    top: 60px;
+    left: 0;
+}
+
+.menu.show {
+    display: flex;
+}
+
+.menu-toggle {
+    display: block;
 }
 
 /* #problem-text{
