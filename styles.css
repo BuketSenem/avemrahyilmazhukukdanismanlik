@@ -388,9 +388,10 @@ nav {
   }
 
   .ara-p{
-    font-size: 70px;
+    /* font-size: 70px; */
     text-align: center;
     color: #0f5f0f;
+    max-width: 100%;
   }
 
   .kararlar-sec{
