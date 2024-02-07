@@ -15,9 +15,13 @@ ul {
 }
 
 .menu-toggle {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .menu a{
