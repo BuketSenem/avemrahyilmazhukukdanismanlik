@@ -797,6 +797,24 @@ body {
     nav{
         height: 75px;
     }
+    .about-section img {
+      /* max-width: 60%; */
+      height: auto; 
+      /* margin-right: 20px;  */
+      /* padding-right: 10%; */
+      width: 400px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10%;
+    }
+
+    .about-section{
+      display: block;
+      align-items: center;
+      /* margin: auto; */
+      text-align: center;
+    }
+    
 
     .logo img{
         height: 78px;
