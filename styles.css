@@ -34,13 +34,13 @@ body .banner-area .banner-text{
     letter-spacing: 2px;
 }
 body.kararlar .banner-area{
-    background-image: url(image/banner-img5.jpg);
+    background-image: url(image/banner-img4.jpg);
 }
 body.hakkinda .banner-area{
-    background-image: url(image/banner-img3.jpg);
+    background-image: url(image/banner-img2.jpg);
 }
 body.calisma-alanlari .banner-area{
-    background-image: url(image/banner-img44.jpg);
+    background-image: url(image/banner-img3.jpg);
 }
 body.hakkinda .banner-area .banner-text{
     letter-spacing: 2px;
@@ -51,7 +51,7 @@ body.calisma-alanlari .banner-area .banner-text{
 }
 
 body.iletisim .banner-area{
-    background-image: url(image/banner-img2.PNG);
+    background-image: url(image/banner-img5.jpg);
 }
 .banner-area{
     position: relative;
